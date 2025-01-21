@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2870023450857156082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8263276719155162398}
+  - component: {fileID: 3483006657322550748}
+  m_Layer: 0
+  m_Name: statsimprovement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8263276719155162398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2870023450857156082}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 352.25, y: 268.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3483006657322550748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2870023450857156082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45257d85a4f568a48aae0447c1284c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  healthLevel: 1
+  staminaLevel: 1
+  attackLevel: 1
+  baseHealthCost: 5
+  baseStaminaCost: 5
+  baseAttackCost: 5
+  healthImp: 20
+  staminaImp: 10
+  attackImp: 3
+  playerInventory:
+    inventorySlots: []
+  healthItems: []
+  staminaItems:
+  - {fileID: 11400000, guid: 2e0aeab6f72afb3498d404c22d88eda9, type: 2}
+  - {fileID: 11400000, guid: 4ee61149db3348b4bb370375506a2b32, type: 2}
+  - {fileID: 11400000, guid: c51bf6d34b5d1594eae035d1163cd84a, type: 2}
+  attackItems:
+  - {fileID: 11400000, guid: b0c202053739b0c4e85621c06bec80bd, type: 2}
+  - {fileID: 11400000, guid: 6984d582e343f8347b0111543b5f93b5, type: 2}
+  - {fileID: 11400000, guid: 115548b2edccd3b429f5c5671bc62e75, type: 2}
+  healthItemAmounts: 
+  staminaItemAmounts: 020000000a0000000a000000
+  attackItemAmounts: 010000000a0000000a000000

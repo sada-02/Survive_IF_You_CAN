@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac9f7a5094c6904994b64cfdfe72c71, type: 3}
+  m_Name: darkwood_loot
+  m_EditorClassIdentifier: 
+  lootSprite: {fileID: 417959109, guid: 5c9a639e888d24b4897e0c47ec53f011, type: 3}
+  dropChance: 60
+  item: {fileID: 11400000, guid: 115548b2edccd3b429f5c5671bc62e75, type: 2}

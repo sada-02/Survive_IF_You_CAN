@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1741902185334822420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8380080186686452136}
+  - component: {fileID: 5169524322552136558}
+  m_Layer: 0
+  m_Name: EnemySpawnerGraveyard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8380080186686452136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741902185334822420}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23, y: 39, z: -0.79235685}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5169524322552136558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741902185334822420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0831349ebf0665b47ada4db86f6b06e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - enemyPrefab: {fileID: 5392552265809736100, guid: 2e6ecff95fa13f2448155f5887ea64c6, type: 3}
+    spawnProbability: 65
+  - enemyPrefab: {fileID: 6124030619158904201, guid: 387a848fa30942845884ff2eecaf9cb6, type: 3}
+    spawnProbability: 35
+  spawnAreaMin: {x: -59, y: 28}
+  spawnAreaMax: {x: -15, y: 57}
+  minSpawnInterval: 20
+  maxSpawnInterval: 40
+  maxSpawnLocations: 3
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  collisionRadius: 0.5

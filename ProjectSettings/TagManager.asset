@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - player
+  - audio
+  - player_inventory
+  - obstacle
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - objects_1
+  - ground
+  - enemies
+  - statues
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 2865339303
+    locked: 0
+  - name: foreground
+    uniqueID: 2759568495
+    locked: 0
+  - name: statues
+    uniqueID: 2820698395
+    locked: 0
