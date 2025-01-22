@@ -30,18 +30,19 @@ MenuAudio.cs -> script for playing games on the main menu script .
 
 scoreManager.cs -> for managing the score on the screen and on the game over screen .
 
-AudioManager.cs -> for managing audio in the game scene , between main game , pause screen or game over screen .
+audioManager.cs -> for managing audio in the game scene , transitioning music  between main game , pause screen or game over screen .
 
 #### enemy folder
-All the folders named goblin , minatour , mooshroom , one_eye , skeleton have the same script just the stats of the different enemy is different . These scripts contains various functions for controlling the functions of the enemy like roaming randomly , following and attacking player , droping loot , etc . It also contains the items that the enemy can spawn , you can assign the probability of the drop .
+All the folders named goblin , minatour , mooshroom , one_eye , skeleton have the same script just the stats of the different enemy is different . These scripts contains various functions for controlling the functions of the enemy like roaming randomly , following and attacking player , tracking the last seen position of the player , droping loot , a simple logic to prevent them from stucking to the same position .
 
 EnemyBase.cs -> common scripts for all the enemies .
 
 EnemySpawner.cs -> script for spawning enemies randomly on the specified area by choosing a suitable spot on that area repeatedly after every randomly interval of time .
 
-loot.cs -> a script for defining loot items .
+loot.cs -> a script for defining loot items also assigning probability of each item dropping .
 
-lootbag.cs -> script for managing the loot that the enemy would drop after it gets defeated .
+lootbag.cs -> script for managing the loot that the enemy would drop after it 
+gets defeated .
 
 #### main_player folder
 player_movement.cs -> script handling how the player would move and also how to position aim .
@@ -52,19 +53,31 @@ stamina_sys.cs -> for handling the stamina system of the player .
 
 hunger_sys.cs -> for handling the hunger of the player .
 
-camera_follow.cs -> for moving camera along with the player .
+camera_follow.cs -> for moving camera along with the player and its interactions with other game objects in the game .
 
 arrow.cs -> for handling the arrow object on the screen .
 
 StatsImprovement.cs -> for handling the upgrade stat screen like check whether elements required are present or not and showing the list of items required for upgrading .
 
-StatsImprovementUI.cs -> for handling the upgrade screen UI .
+StatsImprovementUI.cs -> for handling the upgrade screen UI and integrating the interaction and display simultaneously .
 
-player.cs -> main script for player handling and integrating all the necessary features for interaction with the other game objects with the players like when to walk , run , attack , use items from inventory , take damage , pause/resume the game , etc .
+player.cs -> main script for player handling and integrating all the necessary features for interaction with the other game objects with the players like when to walk , run , attack , use items from inventory , take damage , pause/resume the game , updating hunger and stamina .
 
 #### inventory folder
 inventory_item.cs -> attributes to the inventory item . 
 
-inventory_player.cs -> handling a single slot of the inventory and have all the functions required for modifying it .
+inventory_player.cs -> handling a single slot of the inventory and have all the functions required for modifying it like adding items if possible or removing the items or splitting or clearing it .
 
-inventory_holder.cs -> handles inventory of the player . 
+inventory_holder.cs -> handles inventory of the player and provides refrences to it . 
+
+inventory_sys.cs -> main inventory script handling the entire inventory system , handling multiple slots at once , checking whether we can add item or not , if possible where to add , removing items , checking for presence of item within the inventory .
+
+Inventory_UI.cs -> handles the interaction of mouse slot with the inventory slot like on clicking an item on inventory would pick it up , once picked item would follow it or clear it once clicked outside the inventory UI .
+
+inventorySlots_UI.cs -> managing the UI of the items in inventory slots before and after their interactions .
+
+item_pickup.cs -> script managing the functionality of picking an item present on the scene .
+
+inventory_display.cs -> backbone for managing the interaction and display of inventory like picking up the item , place an item , split , swap or stack item .
+
+staticInventoryDisplay.cs -> script to manage and display a static inventory linking a UI slots in the inventory system, ensuring the inventory is correctly displayed and updated in real-time as items are added, removed, or modified .
