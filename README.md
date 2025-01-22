@@ -53,7 +53,7 @@ stamina_sys.cs -> for handling the stamina system of the player .
 
 hunger_sys.cs -> for handling the hunger of the player .
 
-camera_follow.cs -> for moving camera along with the player and its interactions with other game objects in the game .
+camera_follow.cs -> for moving camera along with the player and its interactions with other game objects in the game . Link it to the camera and pass in the player refrence .
 
 arrow.cs -> for handling the arrow object on the screen .
 
