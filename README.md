@@ -13,7 +13,7 @@ Contains all the scenes used in the game like main menu and the main game .
 Contains all the animations that have been applied on the gameobjects in this project .
 
 ### Prefabs 
-Contains all the prefabs of the gameobjects .
+Contains all the prefabs of the gameobjects that will also give the idea of how linking of different objects is done .
 
 ### scriptable_items
 Contains all the scriptable objects used .
