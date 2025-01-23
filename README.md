@@ -1,8 +1,10 @@
 # Survive_IF_You_CAN
-
+Game Dev project from tinkering project .
 It is a small 2D top down RPG based survival game , in which the player has to survive as long as possible from the monsters continuously spawning in the scene .
 You can download the game using the link below .
 https://drive.google.com/drive/folders/1YucaSXv3cC7p3jEr5rgfA7hvUu5d9G-2?usp=sharing
+
+Credits :- Kartik Sarda
 
 ## Assets 
 ### Audio 
